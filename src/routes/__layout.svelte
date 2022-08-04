@@ -14,7 +14,7 @@
 
 
 <Navbar/>
-<div class="w-screen text-center flex flex-row justify-between m-auto bg-slate-400 p-2">
+<div class="w-auto text-center flex flex-row justify-between overflow-auto m-auto bg-slate-400 p-2">
 	<button class="btn btn-warning"
 			on:click={goBack}>
 		Go Back

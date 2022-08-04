@@ -5,6 +5,8 @@
     import {onMount} from 'svelte'
     import SongList from '$lib/SongList.svelte'
 
+
+    let css = 0
     let songResults = []
     onMount( async()=>{
         const searched = $page.params.searchedValue
@@ -26,7 +28,10 @@
 
     </div>
 
-    <div class="mb-2 flex flex-row flex-wrap w-screen gap-10 justify-center">
+    
+    
+
+    <div class="mb-2 flex flex-row flex-wrap w-auto gap-10 justify-center overflow-x-hidden">
         {#each songResults as singleSong}
             <SongList   songTitle={singleSong.collectionCensoredName}
                         trackName = {singleSong.trackName}
